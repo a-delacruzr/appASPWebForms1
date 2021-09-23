@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace appASPWebForms1 {
+namespace ASPAplicacion1 {
     
     
     public partial class Site_Mobile {
