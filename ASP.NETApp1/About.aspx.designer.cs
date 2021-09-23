@@ -8,9 +8,9 @@
 //------------------------------------------------------------------------------
 
 
-namespace ASPAplicacion1
+namespace ASP.NETApp1
 {
-    public partial class _Default
+    public partial class About
     {
     }
 }

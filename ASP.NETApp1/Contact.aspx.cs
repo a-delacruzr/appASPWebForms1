@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace ASPAplicacion1
+namespace ASP.NETApp1
 {
     public partial class Contact : Page
     {

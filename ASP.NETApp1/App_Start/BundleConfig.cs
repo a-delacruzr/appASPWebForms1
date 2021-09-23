@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Optimization;
 using System.Web.UI;
 
-namespace ASPAplicacion1
+namespace ASP.NETApp1
 {
     public class BundleConfig
     {

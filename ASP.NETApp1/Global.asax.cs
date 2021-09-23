@@ -7,7 +7,7 @@ using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
 
-namespace ASPAplicacion1
+namespace ASP.NETApp1
 {
     public class Global : HttpApplication
     {
