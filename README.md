@@ -1,6 +1,8 @@
-# appASPWebForms1
-Apllicación ASP.NET Web Forms 1 22/09/2021
-
+# Ejercicios ASP
+- Aplicación ASP.NET Web Forms 1 
+- Aplicación ASP .NET Core MVC 1 
+- Aplicación ASP .NET Core MVC 2
+- Aplicación ASP .NET Core MVC 3
 # Instituto Tecnológico de Nuevo Laredo
 - Alumno: **Antonio De la Cruz Rivera**
 - No. Control: **18100163**
