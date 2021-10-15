@@ -1,0 +1,25 @@
+﻿@model Empleado 
+
+<form asp-action="RegistroEmpleado" method="post">
+    <div class="form-group">
+        <label asp-for="NumeroEmpleado">No. Empleado: </label>
+        <input asp-for="NumeroEmpleado" />
+    </div>
+    <div class="form-group">
+        <label asp-for="NombreCompleto">Nombre: </label>
+        <input asp-for="NombreCompleto" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Sueldo">Sueldo: </label>
+        <input asp-for="Sueldo" />
+    </div>
+    <div class="form-group">
+        <label asp-for="HorasTrabajadas">Horas trabajadas: </label>
+        <input asp-for="HorasTrabajadas" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Puesto">Puesto: </label>
+        <input asp-for="Puesto" />
+    </div>
+    <button type="submit" class="btn btn-success">Agregar</button>
+</form>

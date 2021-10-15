@@ -1,0 +1,27 @@
+﻿@model List<Empleado>
+
+@{
+    double sueldoTotal = 0;
+    }
+<table class="table table-striped">
+    @foreach (Empleado empleado in Model)
+    {
+        <tr>
+            <td>@empleado.NumeroEmpleado</td>
+            <td>@empleado.NombreCompleto</td>
+            <td>@empleado.Puesto</td>
+            <td>@empleado.HorasTrabajadas</td>
+            <td>@empleado.Sueldo</td>
+        </tr>
+        sueldoTotal = sueldoTotal + empleado.Sueldo;
+    }
+<tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td>@sueldoTotal</td>
+</tr>
+</table>
+
+<a asp-action="RegistroEmpleado">Registrar otro empleado</a>

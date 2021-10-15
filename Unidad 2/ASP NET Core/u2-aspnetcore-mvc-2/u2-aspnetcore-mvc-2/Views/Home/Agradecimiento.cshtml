@@ -1,0 +1,13 @@
+﻿@model ViewModelAlumnoEncuesta
+<h1>Gracias por responder la encuesta</h1>
+<p>
+    @if(Model.RegresarClases)
+     {
+        @:Te esperamos pronto!
+     }
+     else
+     {
+        @:Hay que seguir cuidándonos!
+     }
+</p>
+<a asp-action="ListadoRespuestas">Ver las demás respuestas</a>
