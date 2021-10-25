@@ -14,5 +14,9 @@ namespace u2_aspnetcore_mvc_3.Models
         {
             lstEmpleado.Add(miEmpleado);
         }
+        public static void EiminarEmpleado(Empleado empleado) 
+        {
+            lstEmpleado.Remove(empleado);
+        }
     }
 }

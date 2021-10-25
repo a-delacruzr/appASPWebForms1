@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anton\\source\\repos\\u2-aspnetcore-mvc-3\\u2-aspnetcore-mvc-3\\u2-aspnetcore-mvc-3.csproj": {}
+    "C:\\Users\\anton\\source\\repos\\appASPWebForms1\\Unidad 2\\ASP NET Core\\u2-aspnetcore-mvc-3\\u2-aspnetcore-mvc-3\\u2-aspnetcore-mvc-3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anton\\source\\repos\\u2-aspnetcore-mvc-3\\u2-aspnetcore-mvc-3\\u2-aspnetcore-mvc-3.csproj": {
+    "C:\\Users\\anton\\source\\repos\\appASPWebForms1\\Unidad 2\\ASP NET Core\\u2-aspnetcore-mvc-3\\u2-aspnetcore-mvc-3\\u2-aspnetcore-mvc-3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anton\\source\\repos\\u2-aspnetcore-mvc-3\\u2-aspnetcore-mvc-3\\u2-aspnetcore-mvc-3.csproj",
+        "projectUniqueName": "C:\\Users\\anton\\source\\repos\\appASPWebForms1\\Unidad 2\\ASP NET Core\\u2-aspnetcore-mvc-3\\u2-aspnetcore-mvc-3\\u2-aspnetcore-mvc-3.csproj",
         "projectName": "u2-aspnetcore-mvc-3",
-        "projectPath": "C:\\Users\\anton\\source\\repos\\u2-aspnetcore-mvc-3\\u2-aspnetcore-mvc-3\\u2-aspnetcore-mvc-3.csproj",
+        "projectPath": "C:\\Users\\anton\\source\\repos\\appASPWebForms1\\Unidad 2\\ASP NET Core\\u2-aspnetcore-mvc-3\\u2-aspnetcore-mvc-3\\u2-aspnetcore-mvc-3.csproj",
         "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anton\\source\\repos\\u2-aspnetcore-mvc-3\\u2-aspnetcore-mvc-3\\obj\\",
+        "outputPath": "C:\\Users\\anton\\source\\repos\\appASPWebForms1\\Unidad 2\\ASP NET Core\\u2-aspnetcore-mvc-3\\u2-aspnetcore-mvc-3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

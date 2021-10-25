@@ -37,8 +37,15 @@ namespace u2_aspnetcore_mvc_3.Controllers
         [HttpPost]
         public IActionResult RegistroEmpleado(Empleado miEmpleado)
         {
-            Datos.AgregarEmpleado(miEmpleado);
-            return View("RegistroExitoso",miEmpleado);
+            if(ModelState.IsValid)
+            {
+                Datos.AgregarEmpleado(miEmpleado);
+                return View("RegistroExitoso", miEmpleado);
+            }
+            else
+            {
+                return View();
+            }
         }
 
         public IActionResult ListadoEmpleados()
@@ -46,6 +53,37 @@ namespace u2_aspnetcore_mvc_3.Controllers
             return View(Datos.Empleados);
         }
 
+        [HttpGet]
+        public IActionResult EditarEmpleado(int numEmpleado)
+        {
+            Empleado empleado = Datos.Empleados.Where(e => e.NumeroEmpleado == numEmpleado).FirstOrDefault();
+            return View(empleado);
+        }
+
+        [HttpPost]
+        public IActionResult EditarEmpleado(Empleado miEmpleado)
+        {
+            Empleado empleado = Datos.Empleados.Where(empleado => empleado.NumeroEmpleado == miEmpleado.NumeroEmpleado).FirstOrDefault();
+            empleado.NombreCompleto = miEmpleado.NombreCompleto;
+            empleado.Puesto = miEmpleado.Puesto;
+            empleado.HorasTrabajadas = miEmpleado.HorasTrabajadas;
+            empleado.Sueldo = miEmpleado.Sueldo;
+            return RedirectToAction("ListadoEmpleados");
+        }
+
+        [HttpGet]
+        public IActionResult EliminarEmpleado(int numEmpleado)
+        {
+            Empleado empleado = Datos.Empleados.Where(empleado => empleado.NumeroEmpleado == numEmpleado).FirstOrDefault();
+            return View(empleado);
+        }
+
+        public IActionResult ConfirmarEliminarEmpleado(int numEmpleado)
+        {
+            Empleado empleado = Datos.Empleados.Where(empleado => empleado.NumeroEmpleado == numEmpleado).FirstOrDefault();
+            Datos.EiminarEmpleado(empleado);
+            return RedirectToAction("ListadoEmpleados");
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

@@ -1,9 +1,9 @@
 ﻿@model Empleado
 <div asp-validation-summary="All"></div>
-<form asp-action="RegistroEmpleado" method="post">
+<form asp-action="EditarEmpleado" method="post">
     <div class="form-group">
         <label asp-for="NumeroEmpleado">No. Empleado: </label>
-        <input asp-for="NumeroEmpleado" />
+        <input asp-for="NumeroEmpleado" readonly/>
     </div>
     <div class="form-group">
         <label asp-for="NombreCompleto">Nombre: </label>
@@ -21,5 +21,5 @@
         <label asp-for="Puesto">Puesto: </label>
         <input asp-for="Puesto" />
     </div>
-    <button type="submit" class="btn btn-success">Agregar</button>
+    <button type="submit" class="btn btn-success">Guardar</button>
 </form>
